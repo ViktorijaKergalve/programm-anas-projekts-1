@@ -1,4 +1,0 @@
-
-# programm-anas-projekts-
-gggggggg
-
