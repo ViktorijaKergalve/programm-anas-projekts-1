@@ -26,3 +26,8 @@ class WordGame:
         else:
             self.tries_left -= 1
             if self.tries_left == 0:
+                return f"Spēle ir beigusies! Pareizais vārds bija '{self.secret_word}'."
+            return f"Nepareizi! Atlikuši mēģinājumi : {self.tries_left}"
+
+    def is_word_guessed(self):
+        return all (letter in self.guessed_letters for letter in self.secret_word)
