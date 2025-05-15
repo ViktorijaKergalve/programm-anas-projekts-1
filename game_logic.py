@@ -20,4 +20,9 @@ class WordGame:
 
         if letter in self.secret_word:
             if self.is_word_guessed():
-            
+                return "Apsveicam! Tu uzminēji vārdu!"
+            else:
+                return "Pareizi!"
+        else:
+            self.tries_left -= 1
+            if self.tries_left == 0:
