@@ -13,3 +13,14 @@ def main():
         if len(guess) ! = 1 or not guess.isalpha():
             print (" Ievadi tikai vienu burtu! ")
             continue
+        message = game.guess_letter(guess)
+        print(message)
+
+  if game.is word_guessed():
+      print(f"\nTu uzminēji vārdu: {sectre_word}")
+  else
+      print(f"\nTu zaudēji! Vārds bija : {secret_word}")
+
+if __name__ == "__main__":
+  main()
+
