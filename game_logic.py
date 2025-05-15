@@ -12,3 +12,12 @@ class WordGame:
             else:
                 display += " _ "
         return display.strip()
+
+    def guess_letter(self, letter):
+        if letter in self.guessed_letters:
+            return "Šo burtu jūs jau minējāt."
+        self.guessed_letters.append(letter)
+
+        if letter in self.secret_word:
+            if self.is_word_guessed():
+            
